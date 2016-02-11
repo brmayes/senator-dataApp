@@ -1889,12 +1889,12 @@
           {
             "name": "John Thune",
             "party": "Republican",
-            "bio": "",
+            "bio": "Grew up in Murdo, South Dakota. Got his undergraduate degree at Biola University and Master’s from University of South Dakota. Goes hunting in his free time.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Education reform to strengthen public education systems by reauthorizing federal K-12 education laws. ",
+                "p2": "Opposes EPA regulation that expands authority to regulate small wetlands, creeks, stock ponds and ditches under the Clean Water Act.",
+                "p3": "Strongly supports the Second Amendment."
               }
             ],
             "img": "imgs/senators/thune_john.jpg"
