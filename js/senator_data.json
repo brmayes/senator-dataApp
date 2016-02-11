@@ -61,7 +61,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -102,7 +102,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -159,7 +159,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -309,7 +309,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -394,7 +394,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -438,7 +438,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -464,7 +464,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -539,7 +539,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -582,7 +582,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -621,7 +621,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -660,7 +660,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -719,7 +719,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -774,7 +774,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -825,7 +825,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -864,7 +864,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -939,7 +939,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -998,7 +998,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1024,7 +1024,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1107,7 +1107,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1133,7 +1133,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1159,7 +1159,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1185,7 +1185,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1211,7 +1211,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1262,7 +1262,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1288,7 +1288,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1314,7 +1314,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1332,19 +1332,19 @@
           {
             "name": "Catherine Cortez Masto",
             "party": "Democratic",
-            "bio": "",
+            "bio": "Former Attorney General of Nevada. Was the Chief of Staff for then-Governor Bob Miller. Graduated with a B.A. of University of Nevada-Reno (1986).",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Wants to lower tax burden for the middle class.",
+                "p2": "Supports comprehensive immigration reform that secures our borders from undocumented immigrants. ",
+                "p3": "Equal pay is ore than a women’s issue, it needs to be extended to support the middle class."
               }
             ],
-            "img": ""
+            "img": "imgs/senators/cortez-masto_catherine.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Joe Heck",
+            "party": "Republican"
           }
         ]
       },
@@ -1357,7 +1357,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1373,21 +1373,21 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Kelly Ayotte",
+            "party": "Republican",
+            "bio": "Received a B.A. from Pennsylvania State University. Graduated Villanova University School of Law. Born on June 27, 1968 in Nashua, New Hampshire.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Thinks that we should not expand Obamacare.",
+                "p2": "Wants to expand the Military but thinks we should stay out of Iran.",
+                "p3": "Strongly favors maintaining U.S. sovereignty from the United Nations."
               }
             ],
-            "img": ""
+            "img": "imgs/senators/ayotte_kelly.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Maggie Hassan",
+            "party": "Democratic"
           }
         ]
       },
@@ -1400,7 +1400,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1415,23 +1415,6 @@
         "years_in_off": 3,
         "term_end": 2021,
         "candidates": [
-          {
-            "name": "",
-            "party": "",
-            "bio": "",
-            "platform": [
-              {
-                "p1": "",
-                "p2": "",
-                "p3": ""
-              }
-            ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
-          }
         ]
       },
       {
@@ -1443,7 +1426,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1469,7 +1452,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1485,21 +1468,17 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Chuck Schumer",
+            "party": "Democratic",
+            "bio": "Born in Brooklyn, New York on November 23, 1950. Attended Harvard University for both his Bachelors and Juris Doctor degrees. ",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Democracy is strengthened by casting light on spending in Elections Act of 1025.",
+                "p2": "Thinks we should increase the maximum age for children eligible for medical care under CHAMPVA.",
+                "p3": "Believes in a woman’s right to determine whether and when to bear a child or end a pregnancy."
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/schumer_chuck.jpg"
           }
         ]
       },
@@ -1512,7 +1491,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1528,21 +1507,49 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Richard Burr",
+            "party": "Republican",
+            "bio": "Born in Charlottesville, Virginia. First elected to the senate in 2004. Was a sales manager for Carswell Distributing Company for 17-years before being a politician. ",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Recognizes a comprehensive national energy policy is vital to our nations security and economic prosperity. ",
+                "p2": "Wants to improve the quality of heath care and supports the repeal of the medical devices tax.",
+                "p3": "Wants to finish construction on the Keystone XL pipeline because he thinks it will create thousands of new jobs and add money to the dollars to our economy. "
               }
             ],
-            "img": ""
+            "img": "imgs/senators/burr_richard.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Greg Brannon",
+            "party": "Republican"
+          },
+          {
+            "name": "Larry Holmquist",
+            "party": "Republican"
+          },
+          {
+            "name": "Paul Wright",
+            "party": "Republican"
+          },
+          {
+            "name": "Kevin Griffin",
+            "party": "Democratic"
+          },
+          {
+            "name": "Ernest Reeves",
+            "party": "Democratic"
+          },
+          {
+            "name": "Chris Rey",
+            "party": "Democratic"
+          },
+          {
+            "name": "Deborah Ross",
+            "party": "Democratic"
+          },
+          {
+            "name": "Sean Haugh",
+            "party": "Independent"
           }
         ]
       },
@@ -1555,7 +1562,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1571,21 +1578,17 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "John Hoeven",
+            "party": "Republican",
+            "bio": "Born in Bismarck, North Dakota on March 13, 1957. Got his bachelor’s degree form Dartmouth College and has a master’s degree from Northwestern University. Has a wife Mical and two children, Marcela and Jack. ",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Wants to improve heath care for our veterans.",
+                "p2": "Remove obstacles and empower the private sector to invest, innovate, and create jobs. ",
+                "p3": "Should impose economic sanctions to make Iran pay for its misbehavior and support financial sanctions on Iran."
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/hoeven_john.jpg"
           }
         ]
       },
@@ -1598,7 +1601,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1614,21 +1617,45 @@
         "term_end": 2019,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Rob Portman",
+            "party": "Republican",
+            "bio": "Married Jane Portman in 1986. Was born in Cincinnati, Ohio on December 19, 1955. Was the Director of the Office of Management and Budget for former President George Bush. ",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "American needs a comprehensive national energy plan that reduces our dependence on foreign oil. ",
+                "p2": "Promotes policies that will expand the military.",
+                "p3": "Doesn’t think we should legalize marijuana."
               }
             ],
-            "img": ""
+            "img": "imgs/senators/portman_rob.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Don Elijah Eckhart",
+            "party": "Republican"
+          },
+          {
+            "name": "Kelli Prather",
+            "party": "Democratic"
+          },
+          {
+            "name": "P.G. Sittenfeld",
+            "party": "Democratic"
+          },
+          {
+            "name": "Ted Strickland",
+            "party": "Democratic"
+          },
+          {
+            "name": "Thomas William Connors",
+            "party": "Independent"
+          },
+          {
+            "name": "Joseph Demare",
+            "party": "Independent"
+          },
+          {
+            "name": "Scott Rupert",
+            "party": "Independent"
           }
         ]
       },
@@ -1641,7 +1668,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1657,21 +1684,17 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "James Lankford",
+            "party": "Republican",
+            "bio": "Lankford was born in Dallas, Texas. He earned his B.S. from the University of Texas in 1990 and his M.Div. from Southwestern Theological Baptist Seminary in 1994. Before entering politics, Lankford was the director of Falls Creek Youth Camp from 1996 to 2009.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Doesn’t think we should legally require businesses to hire women and minorities (i.e. affirmative action).",
+                "p2": "Opposed Same-sex marriage.",
+                "p3": "Thinks we should expand the military."
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/lankford_james.jpg"
           }
         ]
       },
@@ -1684,7 +1707,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1700,21 +1723,22 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Ron Wyden",
+            "party": "Democratic",
+            "bio": "Born May 3, 1949 in Witchita, Kansas. Has six children. Played D1 basketball for two seasons at UC Santa Barbara.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "Opposes vouchers that would allow students to choose their schools.",
+                "p2": "We should have higher taxes for the wealthy. ",
+                "p3": "Prioritizes green energy over foreign oil dependency.",
+                "p4": "Thinks Hemp is the future."
               }
             ],
-            "img": ""
+            "img": "imgs/senators/wyden_ron.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Kevin Stine",
+            "party": "Democratic"
           }
         ]
       },
@@ -1727,7 +1751,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1743,21 +1767,33 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Pat Toomey",
+            "party": "Republican",
+            "bio": "Graduated Harvard university. Lives in Zionsville, Pennsylvania. Married to his wife Kris and they have three children.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "EPA should be a cooperative player and not an overbearing regulator of farmers.",
+                "p2": "Believes in increasing services and benefits for veterans.",
+                "p3": "Wants affordable higher education."
               }
             ],
-            "img": ""
+            "img": "imgs/senators/toomey_pat.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Joe Sestak",
+            "party": "Democratic"
+          },
+          {
+            "name": "Ed Pawlowski",
+            "party": "Democratic"
+          },
+          {
+            "name": "Katie McGinty",
+            "party": "Democratic"
+          },
+          {
+            "name": "John Fetterman",
+            "party": "Democratic"
           }
         ]
       },
@@ -1770,7 +1806,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1796,7 +1832,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1812,21 +1848,17 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
-            "bio": "",
+            "name": "Tim Scott",
+            "party": "Republican",
+            "bio": "He’s a black republican. Born September 19, 1965 in North Charleston, South Carolina. Grew up poor.",
             "platform": [
               {
-                "p1": "",
-                "p2": "",
-                "p3": ""
+                "p1": "End the partisan IRS culture.",
+                "p2": "Law enforcement agencies need to report the use of lethal force and wear body cameras.",
+                "p3": "Wants to limit government spending and introduced a Balanced Budget Amendment."
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/scott_tim.jpg"
           }
         ]
       },
@@ -1839,7 +1871,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1855,8 +1887,8 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
+            "name": "John Thune",
+            "party": "Republican",
             "bio": "",
             "platform": [
               {
@@ -1865,11 +1897,7 @@
                 "p3": ""
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/thune_john.jpg"
           }
         ]
       },
@@ -1882,7 +1910,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1908,7 +1936,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1934,7 +1962,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1950,8 +1978,8 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
+            "name": "Mike Lee",
+            "party": "Republican",
             "bio": "",
             "platform": [
               {
@@ -1960,11 +1988,7 @@
                 "p3": ""
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/lee_mike.jpg"
           }
         ]
       },
@@ -1977,7 +2001,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -1993,8 +2017,8 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
+            "name": "Patrick Leahy",
+            "party": "Democratic",
             "bio": "",
             "platform": [
               {
@@ -2003,11 +2027,7 @@
                 "p3": ""
               }
             ],
-            "img": ""
-          },
-          {
-            "name": "",
-            "party": ""
+            "img": "imgs/senators/leahy_patrick.jpg"
           }
         ]
       },
@@ -2020,7 +2040,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -2046,7 +2066,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -2062,8 +2082,8 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
+            "name": "Patty Murray",
+            "party": "Democratic",
             "bio": "",
             "platform": [
               {
@@ -2072,11 +2092,11 @@
                 "p3": ""
               }
             ],
-            "img": ""
+            "img": "imgs/senators/murray_patty.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Chris Vance",
+            "party": "Republican"
           }
         ]
       },
@@ -2089,7 +2109,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -2115,7 +2135,7 @@
         "term_end": 2021,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -2131,8 +2151,8 @@
         "term_end": 2017,
         "candidates": [
           {
-            "name": "",
-            "party": "",
+            "name": "Ron Johnson",
+            "party": "Republican",
             "bio": "",
             "platform": [
               {
@@ -2141,11 +2161,15 @@
                 "p3": ""
               }
             ],
-            "img": ""
+            "img": "imgs/senators/johnson_ron.jpg"
           },
           {
-            "name": "",
-            "party": ""
+            "name": "Russ Feingold",
+            "party": "Democratic"
+          },
+          {
+            "name": "Phil Anderson",
+            "party": "Independent"
           }
         ]
       },
@@ -2158,7 +2182,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   },
   {
@@ -2184,7 +2208,7 @@
         "term_end": 2019,
         "candidates": [
         ]
-      },
+      }
     ]
   }
 ]
