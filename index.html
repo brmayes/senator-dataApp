@@ -26,18 +26,29 @@
 
   <body ng-controller="BaseController as base">
     <div class="container" ng-controller="StatesController as statesCtrl">
+      <!-- <p>{{ base.message }}</p> -->
 
-      <div class="row">
-          <div class="col-xs-12">
-              <h1>Test</h3>
-              <p>Hello</p>
-              <p>{{ base.message }}</p>
-          </div>
+      <div id="header">
+        <h1>2016 Senate Race</h1>
+        <p id="instructions">
+          Instructions on how to use application.
+        </p>
       </div>
 
-      <div id="state-boxes">
-        <div class="states" ng-repeat="states as stateCtrl">
-
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <div id="state-boxes">
+            <div class="states" ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
+              <p ng-click="statesCtrl.states(state.state)">
+                {{state.state_abbr}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <p>
+            informational text wil go here
+          </p>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-/* General */
+/*****************************   General   *****************************/
 /*
 Color scheme:
 Black: #262626
@@ -9,15 +9,42 @@ Green: #C6CED1
 Grey: #B6DBBE
 */
 
-
-
-/* State Graphic */
-#state-boxes {
-  width: 650px;
-  border: 1px solid #262626;
+.container {
+  margin-top: 25px;
 }
 
+h1 {
+  text-align: center;
+}
+
+#header {
+  margin-bottom: 40px;
+}
+
+#instructions {
+  margin-top: 15px;
+}
+
+.red {
+  background-color: #578B87;
+}
+
+.green {
+  background-color: #C6CED1;
+}
+
+.blue {
+  background-color: #93C9E8;
+}
+
+.grey {
+  background-color: #B6DBBE;
+}
+
+/**************************** State Graphic ****************************/
 .states {
-  width: 10%;
+  width: 9%;
   border: 1px solid #262626;
+  float: left;
+  margin: 1px;
 }
