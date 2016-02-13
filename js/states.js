@@ -19,32 +19,37 @@ app.controller('StatesController', ['$http', function($http) {
         });
 
     this.states = function(stateName) {
-      // console.log("clicked");
 
+      //search through fifty states
       for (var i = 0; i < this.stateSeats.length; i++) {
 
+        //match taken variable to state data
         if (stateName == this.stateSeats[i].state) {
-          // console.log(this.stateSeats[i].state);
+
           this.currentState = this.stateSeats[i];
-          this.seatButtons = "";
+          this.seatButtons = '<h3 class="stateh3">State: ' + this.currentState.state + '</h3>';
+          this.count = 0;
 
           for (var x = 0; x <= 1; x++) {
-            this.seatButtons += '<div class="senatorBox col-md-6 col-xs-6">';
-            this.seatButtons += '<p>Seat ' + x + "</p>";
+            this.seatButtons += '<div class="senatorBox col-md-6 col-xs-6" ng-click="this.count = this.count + 1">';
+            this.seatButtons += '<p>Seat ' + (x + 1) + "</p>";
             this.seatButtons += this.currentState.senator_seats[x].contested;
-
-
             this.seatButtons += '</div>';
 
+            // return this.count;
+
+            // this.seatInformation = function(){
+            //   console.log("reached");
+            // }
           }
+          console.log(this.count);
+
+
+
 
           document.getElementById("seatButtonsDiv").innerHTML = this.seatButtons;
-
         }
-
       }
-
-
     }
 
 }]);
