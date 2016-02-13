@@ -38,8 +38,8 @@
       <div class="row">
         <div class="col-md-8 col-sm-12 col-xs-12">
           <div id="state-boxes">
-            <div class="states" ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
-              <p ng-click="statesCtrl.states(state.state)">
+            <div class="states" ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)" ng-click="statesCtrl.states(state.state)">
+              <p>
                 {{state.state_abbr}}
               </p>
             </div>
@@ -49,8 +49,11 @@
           <p>
             informational text wil go here
           </p>
+          <div id="seatButtonsDiv" class="row"></div>
         </div>
       </div>
+
+
 
     </div>
 

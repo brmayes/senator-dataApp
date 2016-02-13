@@ -43,8 +43,16 @@ h1 {
 
 /**************************** State Graphic ****************************/
 .states {
-  width: 9%;
+  width: 9.5%;
   border: 1px solid #262626;
   float: left;
   margin: 1px;
+}
+
+#seatButtonsDiv {
+  padding: 15px;
+}
+
+.senatorBox {
+  border: solid 1px black;
 }
