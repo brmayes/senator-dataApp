@@ -30,20 +30,13 @@ app.controller('StatesController', ['$http', function($http) {
           this.seatButtons = '<h3 class="stateh3">State: ' + this.currentState.state + '</h3>';
           this.count = 0;
 
+          //created a button for each seat in the selected state
           for (var x = 0; x <= 1; x++) {
-            this.seatButtons += '<div class="senatorBox col-md-6 col-xs-6" ng-click="this.count = this.count + 1">';
+            this.seatButtons += '<div class="senatorBox col-md-6 col-xs-6" ng-click="' + console.log("clicked") + '">';
             this.seatButtons += '<p>Seat ' + (x + 1) + "</p>";
             this.seatButtons += this.currentState.senator_seats[x].contested;
             this.seatButtons += '</div>';
-
-            // return this.count;
-
-            // this.seatInformation = function(){
-            //   console.log("reached");
-            // }
           }
-          console.log(this.count);
-
 
 
 
