@@ -35,9 +35,21 @@
         </p>
       </div>
 
-      <ul ng-repeat="state in senatorsCtrl.stateSeats">
-        <li ng-repeat="seat in state.senator_seats" ng-click="senatorsCtrl.currentSeat(state.state, seat.incumbent_last)">{{ seat.incumbent_first }} {{ seat.incumbent_last }}</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-8">
+          <ul ng-repeat="state in senatorsCtrl.stateSeats">
+            <li ng-repeat="seat in state.senator_seats" ng-click="senatorsCtrl.currentSeat(state.state, seat.incumbent_last)">{{ seat.incumbent_first }} {{ seat.incumbent_last }}</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div id="selectedIncumDiv"></div>
+          <div id="showCandidates" ng-show="senatorsCtrl.showCandidates">
+            <h5>Candidates: </h5>
+            <div id="selectedCandidDiv"></div>
+          </div>
+        </div>
+      </div>
+
 
 
     </div>
