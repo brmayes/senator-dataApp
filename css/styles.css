@@ -69,3 +69,8 @@ h1 {
     width: 48% !important;
   }
 }
+
+#panel {
+    padding: 50px;
+    display: none;
+}

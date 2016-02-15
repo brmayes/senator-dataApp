@@ -45,12 +45,11 @@ app.controller('SenatorsController', ['$http', function($http) {
               this.currentCandidatesData = "";
 
               // "img": "imgs/senators/shelby_richard.jpg",
-              // "years_in_off": 29,
 
               if (this.currentSenator.contested == true) {
-                this.currentSeatContested = "Yes"
+                this.currentSeatContested = "contested"
               } else if (this.currentSenator.contested == false) {
-                this.currentSeatContested = "No"
+                this.currentSeatContested = "not contested"
               }
 
               if (this.currentSenator.cur_party == "Republican") {
@@ -61,24 +60,30 @@ app.controller('SenatorsController', ['$http', function($http) {
 
               //print stuff here
               this.currentSenatorData += '<h4>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h4>';
-              this.currentSenatorData += '<div class="row"><div class="col-md-6"><p>Contested: ' + this.currentSeatContested + '</div><div class="col-md-6"><p>Term End: ' + this.currentSenator.term_end + '</div></div>';
+              this.currentSenatorData += '<div class="row"><div class="col-md-7"><p>No. of Years in Office: ' + this.currentSenator.years_in_off + '</div><div class="col-md-5"><p>Term End: ' + this.currentSenator.term_end + '</div></div>';
+              this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
 
+
+              //check if array of candidates is empty
               if (this.currentSenator.candidates[0] != null ) {
+                //show list if the array of candidates is not empty
                 this.showCandidates = true;
                 this.candidatesList = this.currentSenator.candidates;
 
+                //print loop of candidates
                 for (var k = 0; k < this.currentSenator.candidates.length; k++) {
-                  this.currentCandidatesData += '<li>' + this.candidatesList[k].name + '</li>';
+                  this.currentCandidatesData += '<li id="candidate' + (k + 1) + '">' + this.candidatesList[k].name + '</li>';
+                  this.currentCandidatesData += '<ul id="panel panel' + ( k + 1 ) + '">';
+                  this.currentCandidatesData += '<li>Party: ' + this.candidatesList[k].party + '</li>';
+                  this.currentCandidatesData += '</ul>';
                 }
 
-              } else {
-                console.log("no candidates")
+
               }
 
 
 
-              //this.currentCandidatesData += '';
-
+              //appending variables to div in html
               document.getElementById("selectedIncumDiv").innerHTML = this.currentSenatorData;
               document.getElementById("selectedCandidDiv").innerHTML = ('<ul>') + this.currentCandidatesData + ('</ul>');
 
@@ -91,5 +96,14 @@ app.controller('SenatorsController', ['$http', function($http) {
       }
 
     }
+
+    //toggle function
+    // $("#candidate" + k).click(function(){
+    //     $("#panel" + k).slideToggle("slow");
+    // });
+
+    // this.candidateToggle = function (nameOfState, incumLast, candidateName) {
+    //
+    // }
 
 }]);
