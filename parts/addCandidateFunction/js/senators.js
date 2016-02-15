@@ -10,7 +10,7 @@ app.controller('SenatorsController', ['$http', function($http) {
     this.showCandidates = false;
 
 
-    $http.get('/data/senator_data.json')
+    $http.get('/data/senator_data_new.json')
         .success(function(data) {
             console.log(data);
             _this.stateSeats = data;
@@ -43,8 +43,7 @@ app.controller('SenatorsController', ['$http', function($http) {
               this.currentSeatContested = "";
               this.currentSeatParty = "";
               this.currentCandidatesData = "";
-
-              // "img": "imgs/senators/shelby_richard.jpg",
+              this.candidateInfo = "";
 
               if (this.currentSenator.contested == true) {
                 this.currentSeatContested = "contested"
@@ -74,23 +73,51 @@ app.controller('SenatorsController', ['$http', function($http) {
                 this.showCandidates = true;
                 this.candidatesList = this.currentSenator.candidates;
 
+
                 //print loop of candidates
                 for (var k = 0; k < this.candidatesList.length; k++) {
+
+                  //building string for candidate div
+                  this.currentCandidate = this.candidatesList[k];
+
                   this.currentCandidatesData += '<div class="panel panel-default">';
-                  this.currentCandidatesData += '<div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.candidatesList[k].name + '</a></h4></div>';
+                  this.currentCandidatesData += '<div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.currentCandidate.name + '</a></h4></div>';
                   this.currentCandidatesData += '<div id="collapse' + k + '" class="panel-collapse collapse">';
-                  this.currentCandidatesData += '<div class="panel-body"><ul><li>Party: ' + this.candidatesList[k].party + '</li></ul></div>'
-                  this.currentCandidatesData += '</div></div>'
+                  this.currentCandidatesData += '<div class="panel-body">';
+
+
+                  //check to see if the candidate has additional information
+                  if ("img" in this.currentCandidate) {
+                    this.currentCandidatesData += '<img src="' + this.currentCandidate.img + '" width="30%" style="float:right; margin: 0 0 3px 5px;">'
+                  }
+
+                  if ("bio" in this.currentCandidate) {
+                    this.currentCandidatesData += '<p>' + this.currentCandidate.bio + '</p>'
+                  }
+
+                  this.currentCandidatesData += '<ul><li>Party: ' + this.currentCandidate.party + '</li>';
+
+                  if ("platform" in this.currentCandidate) {
+                    var x;
+                    this.currentCandidatesData += '<li>Platform: </li><ul>'
+
+                    for (x in this.currentCandidate.platform) {
+                      this.currentCandidatesData += '<li>' + this.currentCandidate.platform[x] + '</li>';
+                    }
+
+                    this.currentCandidatesData += '</ul>';
+                  }
+
+                  this.currentCandidatesData += '</ul>';
+                  this.currentCandidatesData += '</div>';
+                  this.currentCandidatesData += '</div></div>';
                 }
 
               }
 
-
               //appending variables to div in html
               document.getElementById("selectedIncumDiv").innerHTML = this.currentSenatorData;
-              // document.getElementById("selectedCandidDiv").innerHTML = ('<ul>') + this.currentCandidatesData + ('</ul>');
               document.getElementById("selectedCandidDiv").innerHTML = ('<div class="panel-group" id="accordion">') + this.currentCandidatesData + ('</div>');
-
 
             }
 
@@ -102,13 +129,5 @@ app.controller('SenatorsController', ['$http', function($http) {
 
     }
 
-    //toggle function
-    // $("#candidate" + k).click(function(){
-    //     $("#panel" + k).slideToggle("slow");
-    // });
-
-    // this.candidateToggle = function (nameOfState, incumLast, candidateName) {
-    //
-    // }
 
 }]);
