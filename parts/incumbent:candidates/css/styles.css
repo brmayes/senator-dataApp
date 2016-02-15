@@ -1,0 +1,71 @@
+/*****************************   General   *****************************/
+/*
+Color scheme:
+Black: #262626
+White: #F7F7F7
+Red: #578B87
+Blue: #93C9E8
+Green: #C6CED1
+Grey: #B6DBBE
+*/
+
+.container {
+  margin-top: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#header {
+  margin-bottom: 40px;
+}
+
+#instructions {
+  margin-top: 15px;
+}
+
+.red {
+  background-color: #578B87;
+}
+
+.green {
+  background-color: #C6CED1;
+}
+
+.blue {
+  background-color: #93C9E8;
+}
+
+.grey {
+  background-color: #B6DBBE;
+}
+
+/**************************** State Graphic ****************************/
+.states {
+  width: 9.5%;
+  border: 1px solid #262626;
+  float: left;
+  margin: 1px;
+  height: 55px;
+}
+
+.stateh3 {
+  margin-top: 0;
+}
+
+#seatButtonsDiv {
+  padding: 0 15px;
+}
+
+.senatorBox {
+  border: solid 1px black;
+  margin-left: 2px;
+  width: 48% !important;
+}
+
+@media (max-width: 400px) {
+  .senatorBox {
+    width: 48% !important;
+  }
+}
