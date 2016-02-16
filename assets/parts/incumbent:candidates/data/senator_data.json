@@ -17,9 +17,11 @@
             "party": "Republican",
             "bio": "Shelby is the incumbent senator for Alabama. He is married with two children, and lives in Tuscaloosa, Alabama. Before his career in government, Shelby was a lawyer and professor.",
             "platform": [
-                "Access to quality education is vital to the future of the United States.",
-                "Gun control legislation violates the Second Amendment.",
-                "Limited government allows for jobs and businesses to thrive."
+              {
+                "p1": "Access to quality education is vital to the future of the United States.",
+                "p2": "Gun control legislation violates the Second Amendment.",
+                "p3": "Limited government allows for jobs and businesses to thrive."
+              }
             ],
             "img": "imgs/senators/shelby_richard.jpg"
           },
@@ -80,9 +82,11 @@
             "party": "Republican",
             "bio": "Murkowski is the incumbent senator for Alaska. Murkowski is married with two sons, and enjoys spending time outdoors. Murkowski graduated undergrad from Georgetown and attended law school at Willamette.",
             "platform": [
-                "The Affordable Care Act is in need of complete reform or repealing.",
-                "The development of conventional energy resources will lower energy prices, protect energy security and reduce trade deficit.",
-                "Education is the root of the future."
+              {
+                "p1": "The Affordable Care Act is in need of complete reform or repealing.",
+                "p2": "The development of conventional energy resources will lower energy prices, protect energy security and reduce trade deficit.",
+                "p3": "Education is the root of the future."
+              }
             ],
             "img": "imgs/senators/murkowski_lisa.jpg"
           }
@@ -119,9 +123,11 @@
             "party": "Republican",
             "bio": "McCain started his career in the Navy in 1954. Other notable government work included his election to the House of Representatives and his nomination for president in 2008.",
             "platform": [
-                "Farmers are the center of the world, and keeping our farmers out of the red is imperative.",
-                "The right to bear arms should be guaranteed and not infrindged upon.",
-                "Harnessing natural energy will allow the United States to achieve energy independence."
+              {
+                "p1": "Farmers are the center of the world, and keeping our farmers out of the red is imperative.",
+                "p2": "The right to bear arms should be guaranteed and not infrindged upon.",
+                "p3": "Harnessing natural energy will allow the United States to achieve energy independence."
+              }
             ],
             "img": "imgs/senators/mccain_john.jpg"
           },
@@ -174,9 +180,11 @@
             "party": "Republican",
             "bio": "Boozman is a life-long resident fo Arkansas and a successful businessman. Before being the incumbent senator in Arkansas, he co-founded an eye clinic and served two terms on the Rogers School Board.",
             "platform": [
-                "The US needs to show unwavering commitment to destroying ISIS and radical Islam.",
-                "Border security should be greater enforced. People should not be rewarded for breaking the law.",
-                "Small businesses are the cornerstone to job creation."
+              {
+                "p1": "The US needs to show unwavering commitment to destroying ISIS and radical Islam.",
+                "p2": "Border security should be greater enforced. People should not be rewarded for breaking the law.",
+                "p3": "Small businesses are the cornerstone to job creation."
+              }
             ],
             "img": "imgs/senators/boozman_john.jpg"
           },
@@ -229,9 +237,11 @@
             "party": "Democratic",
             "bio": "Born in Oakland, CA, Harris began her career as a prosecutor. She got her undergraduate degree from Howard and her law degree from the University of California. She also servered as California's Attorney General.",
             "platform": [
-                "It is essencial to fight for those whose voices aren't often heard by the people in power.",
-                "The United States must be focused on reducing violence as well as prosecuting violent criminals.",
-                "Higher education is the foundation to a better life and a stronger economy."
+              {
+                "p1": "It is essencial to fight for those whose voices aren't often heard by the people in power.",
+                "p2": "The United States must be focused on reducing violence as well as prosecuting violent criminals.",
+                "p3": "Higher education is the foundation to a better life and a stronger economy."
+              }
             ],
             "img": "imgs/senators/harris_kamala.jpg"
           },
@@ -320,9 +330,11 @@
             "party": "Democratic",
             "bio": "Bennet is Colorado's incumbent senator. He is a successful businessman and served as a school superintendent. Bennet is married with three daughters.",
             "platform": [
-                "Building the middle class is the best way to strengthen the economy.",
-                "Protecting the environment and wild lands are a priority.",
-                "A quality education for all children will prepare them for tomorrow's economy."
+              {
+                "p1": "Building the middle class is the best way to strengthen the economy.",
+                "p2": "Protecting the environment and wild lands are a priority.",
+                "p3": "A quality education for all children will prepare them for tomorrow's economy."
+              }
             ],
             "img": "imgs/senators/bennet_michael.jpg"
           },
@@ -403,9 +415,11 @@
             "party": "Democratic",
             "bio": "Blumenthal is the incumbent senator of Connecticut. He did his undergraduate degree at Harvard and his law degree at Yale Law School. Blumenthal is married with four children.",
             "platform": [
-                "All Americans, regardless or race, gender, sexual orientation, etc., should enjoy equal treatment under the law. ",
-                "Consumers should be protected from big businesses.",
-                "Gun legislation is important and should be signed into law, especially after Sandy Hook."
+              {
+                "p1": "All Americans, regardless or race, gender, sexual orientation, etc., should enjoy equal treatment under the law. ",
+                "p2": "Consumers should be protected from big businesses.",
+                "p3": "Gun legislation is important and should be signed into law, especially after Sandy Hook."
+              }
             ],
             "img": "imgs/senators/blumenthal_richard.jpg"
           },
@@ -470,9 +484,11 @@
             "party": "Republican",
             "bio": "Murphy is currently a congressman for Florida’s 18th Congressional District in the U.S. House of Representatives. He is 32 and lives in Jupiter, Florida.",
             "platform": [
-                "Both Social Security and Medicare is important for future generations.",
-                "Protecting the coastline is an important. ",
-                "The middle class is the backbone of the country."
+              {
+                "p1": "Both Social Security and Medicare is important for future generations.",
+                "p2": "Protecting the coastline is an important. ",
+                "p3": "The middle class is the backbone of the country."
+              }
             ],
             "img": "imgs/senators/murphy_patrick.jpg"
           },
@@ -543,9 +559,11 @@
             "party": "Republican",
             "bio": "Isakson is a businessman who served as president of Northside Realty for 20 years. He served 17 years in the Georgia Legislature and three terms in the House of Representatives. He is married with three children and nine grandchildren. ",
             "platform": [
-                "Agriculture is the center of the economy.",
-                "Education is key to a better quality of life.",
-                "Entrepreneurs and small businesses shouldn’t be over mandated. "
+              {
+                "p1": "Agriculture is the center of the economy.",
+                "p2": "Education is key to a better quality of life.",
+                "p3": "Entrepreneurs and small businesses shouldn’t be over mandated. "
+              }
             ],
             "img": "imgs/senators/isakson_johnny.jpg"
           },
@@ -584,9 +602,11 @@
             "party": "Democratic",
             "bio": "Raised in Hawai’i, Schatz is married with two children. Schatz graduated from Pomona College in Claremont, CA. He was previous Lieutenant governor of Hawai’i.",
             "platform": [
-                "Higher education should be inexpensive.",
-                "Veterans should receive the benefits they’ve earned. ",
-                "America should have a lower dependency on foreign oil."
+              {
+                "p1": "Higher education should be inexpensive.",
+                "p2": "Veterans should receive the benefits they’ve earned. ",
+                "p3": "America should have a lower dependency on foreign oil."
+              }
             ],
             "img": "imgs/senators/schatz_brian.jpg"
           }
@@ -621,9 +641,11 @@
             "party": "Republican",
             "bio": "A fourth generation Idahoan, Crapo served six years in the House of Representatives and is the current incumbent senator of Idaho. Crapo got his undergraduate degree from Brigham Young University and his law degree from Harvard. Crapo is married with five children and eight grandchildren.",
             "platform": [
-                "The arts are imperative in the quality of life for everyone in America.",
-                "The guest worker program is broken and needs reform.",
-                "Healthy relationships should be free from physical and emotional abuse."
+              {
+                "p1": "The arts are imperative in the quality of life for everyone in America.",
+                "p2": "The guest worker program is broken and needs reform.",
+                "p3": "Healthy relationships should be free from physical and emotional abuse."
+              }
             ],
             "img": "imgs/senators/crapo_mike.jpg"
           }
@@ -658,9 +680,11 @@
             "party": "Republican",
             "bio": "Kirk is the incumbent senator for Illinois. Kirk, born in Champaign, Illinois, graduated from Cornell University with a B.A. in history, a master’s from London School of Economics and law degree from Georgetown. He previously served five terms in the House of Representatives.",
             "platform": [
-                "The United States should stay on offense in the War on Terror.",
-                "Federal spending should be cut.",
-                "Healthcare costs should be reduced."
+              {
+                "p1": "The United States should stay on offense in the War on Terror.",
+                "p2": "Federal spending should be cut.",
+                "p3": "Healthcare costs should be reduced."
+              }
             ],
             "img": "imgs/senators/kirk_mark.jpg"
           },
@@ -715,9 +739,11 @@
             "party": "Republican",
             "bio": "Holcomb is a veteran of the United States Navy. He graduated from Hanover College. He currently resides in Traders Point, Indiana with his wife and dog.",
             "platform": [
-                "Save Social Security and Medicare before it is too late.",
-                "Replace Obamacare.",
-                "Provide veterans with top of the line healthcare."
+              {
+                "p1": "Save Social Security and Medicare before it is too late.",
+                "p2": "Replace Obamacare.",
+                "p3": "Provide veterans with top of the line healthcare."
+              }
             ],
             "img": "imgs/senators/holcomb_eric.jpg"
           },
@@ -768,9 +794,11 @@
             "party": "Republican",
             "bio": "Born in New Hartford, Iowa, Grassley. Married Barbara Speicher. Has five children: Lee, Wendy, Robin, Michela, and Jay. He’s a farmer!",
             "platform": [
-                "Believes in clean & renewable energy – leader in development of wind, solar, biodiesel, biomass and ethanol as domestic, renewable energy sources for America.",
-                "Wants transparency in federal bureaucracy.",
-                "Thinks we should have taxpayer-backed bailouts"
+              {
+                "p1": "Believes in clean & renewable energy – leader in development of wind, solar, biodiesel, biomass and ethanol as domestic, renewable energy sources for America.",
+                "p2": "Wants transparency in federal bureaucracy.",
+                "p3": "Thinks we should have taxpayer-backed bailouts"
+              }
             ],
             "img": "imgs/senators/grassley_chuck.jpg"
           },
@@ -817,9 +845,11 @@
             "party": "Republican",
             "bio": "Raised in Plainville, Kansas. Been in senate since 2010. Really cares about Kansas…like a lot.",
             "platform": [
-                "Wants spending cuts and tougher funding standards of the federal government.",
-                "Fosters a pro-growth environment for businesses",
-                "Thinks we should open our US exports up to foreign markets"
+              {
+                "p1": "Wants spending cuts and tougher funding standards of the federal government.",
+                "p2": "Fosters a pro-growth environment for businesses",
+                "p3": "Thinks we should open our US exports up to foreign markets"
+              }
             ],
             "img": "imgs/senators/moran_jerry.jpg"
           }
@@ -854,9 +884,11 @@
             "party": "Republican",
             "bio": "No longer in the running for the 2016 Presidential Election. Married for 24 years to Kelly Ashby. Graduated from Dook medical school in 1988; attended Baylor University for undergrad.",
             "platform": [
-                "Wants to end NSA Spying.",
-                "Thinks we should reform the US tax code – budget cuts for rich and the poor",
-                "We need a legal immigration process and to secure our border– thinks illegal immigrants are crossing the US border and threatening national security."
+              {
+                "p1": "Wants to end NSA Spying.",
+                "p2": "Thinks we should reform the US tax code – budget cuts for rich and the poor",
+                "p3": "We need a legal immigration process and to secure our border– thinks illegal immigrants are crossing the US border and threatening national security."
+              }
             ],
             "img": "imgs/senators/paul_rand.jpg"
           },
@@ -927,9 +959,11 @@
             "party": "Republican",
             "bio": "Served in the US Air Force and retired in 2011. Has three brothers. Married Candy Smith and had five kids. Tea party conservative.",
             "platform": [
-                "Favors second amendment rights and absolute right to gun ownership.",
-                "Opposes affirmative action.",
-                "Strongly opposes Obamacare."
+              {
+                "p1": "Favors second amendment rights and absolute right to gun ownership.",
+                "p2": "Opposes affirmative action.",
+                "p3": "Strongly opposes Obamacare."
+              }
             ],
             "img": "imgs/senators/maness_rob.jpg"
           },
@@ -1010,9 +1044,11 @@
             "party": "Democratic",
             "bio": "Born in 1959 in Karachi, Pakistan. Earned his B.A. from Swarthmore College and his M.P.P. from the Kennedy School of Government at Harvard University and his J.D. from Georgetown Law School. Was an attorney before his political career. ",
             "platform": [
-                "Supporter of higher taxes for the wealthy. ",
-                "Prioritize green energy.",
-                "This we should not privatize social security."
+              {
+                "p1": "Supporter of higher taxes for the wealthy. ",
+                "p2": "Prioritize green energy.",
+                "p3": "This we should not privatize social security."
+              }
             ],
             "img": "imgs/senators/van_hollen_chris.jpg"
           },
@@ -1195,9 +1231,11 @@
             "party": "Republican",
             "bio": "Earned his B.A. from Southwest Baptist University. Got a Master’s degree from Missouri State University. Born Jan. 10, 2950 in Niangua, Missouri. ",
             "platform": [
-                "Opposes our troops in Iran.",
-                "Doesn’t think marijuana should be legalized.",
-                "Thinks we should have vouchers for school choice."
+              {
+                "p1": "Opposes our troops in Iran.",
+                "p2": "Doesn’t think marijuana should be legalized.",
+                "p3": "Thinks we should have vouchers for school choice."
+              }
             ],
             "img": "imgs/senators/blunt_roy.jpg"
           },
@@ -1296,9 +1334,11 @@
             "party": "Democratic",
             "bio": "Former Attorney General of Nevada. Was the Chief of Staff for then-Governor Bob Miller. Graduated with a B.A. of University of Nevada-Reno (1986).",
             "platform": [
-                "Wants to lower tax burden for the middle class.",
-                "Supports comprehensive immigration reform that secures our borders from undocumented immigrants. ",
-                "Equal pay is ore than a women’s issue, it needs to be extended to support the middle class."
+              {
+                "p1": "Wants to lower tax burden for the middle class.",
+                "p2": "Supports comprehensive immigration reform that secures our borders from undocumented immigrants. ",
+                "p3": "Equal pay is ore than a women’s issue, it needs to be extended to support the middle class."
+              }
             ],
             "img": "imgs/senators/cortez-masto_catherine.jpg"
           },
@@ -1337,9 +1377,11 @@
             "party": "Republican",
             "bio": "Received a B.A. from Pennsylvania State University. Graduated Villanova University School of Law. Born on June 27, 1968 in Nashua, New Hampshire.",
             "platform": [
-                "Thinks that we should not expand Obamacare.",
-                "Wants to expand the Military but thinks we should stay out of Iran.",
-                "Strongly favors maintaining U.S. sovereignty from the United Nations."
+              {
+                "p1": "Thinks that we should not expand Obamacare.",
+                "p2": "Wants to expand the Military but thinks we should stay out of Iran.",
+                "p3": "Strongly favors maintaining U.S. sovereignty from the United Nations."
+              }
             ],
             "img": "imgs/senators/ayotte_kelly.jpg"
           },
@@ -1430,9 +1472,11 @@
             "party": "Democratic",
             "bio": "Born in Brooklyn, New York on November 23, 1950. Attended Harvard University for both his Bachelors and Juris Doctor degrees. ",
             "platform": [
-                "Democracy is strengthened by casting light on spending in Elections Act of 1025.",
-                "Thinks we should increase the maximum age for children eligible for medical care under CHAMPVA.",
-                "Believes in a woman’s right to determine whether and when to bear a child or end a pregnancy."
+              {
+                "p1": "Democracy is strengthened by casting light on spending in Elections Act of 1025.",
+                "p2": "Thinks we should increase the maximum age for children eligible for medical care under CHAMPVA.",
+                "p3": "Believes in a woman’s right to determine whether and when to bear a child or end a pregnancy."
+              }
             ],
             "img": "imgs/senators/schumer_chuck.jpg"
           }
@@ -1467,9 +1511,11 @@
             "party": "Republican",
             "bio": "Born in Charlottesville, Virginia. First elected to the senate in 2004. Was a sales manager for Carswell Distributing Company for 17-years before being a politician. ",
             "platform": [
-                "Recognizes a comprehensive national energy policy is vital to our nations security and economic prosperity. ",
-                "Wants to improve the quality of heath care and supports the repeal of the medical devices tax.",
-                "Wants to finish construction on the Keystone XL pipeline because he thinks it will create thousands of new jobs and add money to the dollars to our economy. "
+              {
+                "p1": "Recognizes a comprehensive national energy policy is vital to our nations security and economic prosperity. ",
+                "p2": "Wants to improve the quality of heath care and supports the repeal of the medical devices tax.",
+                "p3": "Wants to finish construction on the Keystone XL pipeline because he thinks it will create thousands of new jobs and add money to the dollars to our economy. "
+              }
             ],
             "img": "imgs/senators/burr_richard.jpg"
           },
@@ -1536,9 +1582,11 @@
             "party": "Republican",
             "bio": "Born in Bismarck, North Dakota on March 13, 1957. Got his bachelor’s degree form Dartmouth College and has a master’s degree from Northwestern University. Has a wife Mical and two children, Marcela and Jack. ",
             "platform": [
-                "Wants to improve heath care for our veterans.",
-                "Remove obstacles and empower the private sector to invest, innovate, and create jobs. ",
-                "Should impose economic sanctions to make Iran pay for its misbehavior and support financial sanctions on Iran."
+              {
+                "p1": "Wants to improve heath care for our veterans.",
+                "p2": "Remove obstacles and empower the private sector to invest, innovate, and create jobs. ",
+                "p3": "Should impose economic sanctions to make Iran pay for its misbehavior and support financial sanctions on Iran."
+              }
             ],
             "img": "imgs/senators/hoeven_john.jpg"
           }
@@ -1573,9 +1621,11 @@
             "party": "Republican",
             "bio": "Married Jane Portman in 1986. Was born in Cincinnati, Ohio on December 19, 1955. Was the Director of the Office of Management and Budget for former President George Bush. ",
             "platform": [
-                "American needs a comprehensive national energy plan that reduces our dependence on foreign oil. ",
-                "Promotes policies that will expand the military.",
-                "Doesn’t think we should legalize marijuana."
+              {
+                "p1": "American needs a comprehensive national energy plan that reduces our dependence on foreign oil. ",
+                "p2": "Promotes policies that will expand the military.",
+                "p3": "Doesn’t think we should legalize marijuana."
+              }
             ],
             "img": "imgs/senators/portman_rob.jpg"
           },
@@ -1638,9 +1688,11 @@
             "party": "Republican",
             "bio": "Lankford was born in Dallas, Texas. He earned his B.S. from the University of Texas in 1990 and his M.Div. from Southwestern Theological Baptist Seminary in 1994. Before entering politics, Lankford was the director of Falls Creek Youth Camp from 1996 to 2009.",
             "platform": [
-                "Doesn’t think we should legally require businesses to hire women and minorities (i.e. affirmative action).",
-                "Opposed Same-sex marriage.",
-                "Thinks we should expand the military."
+              {
+                "p1": "Doesn’t think we should legally require businesses to hire women and minorities (i.e. affirmative action).",
+                "p2": "Opposed Same-sex marriage.",
+                "p3": "Thinks we should expand the military."
+              }
             ],
             "img": "imgs/senators/lankford_james.jpg"
           }
@@ -1675,10 +1727,12 @@
             "party": "Democratic",
             "bio": "Born May 3, 1949 in Witchita, Kansas. Has six children. Played D1 basketball for two seasons at UC Santa Barbara.",
             "platform": [
-                "Opposes vouchers that would allow students to choose their schools.",
-                "We should have higher taxes for the wealthy. ",
-                "Prioritizes green energy over foreign oil dependency.",
-                "Thinks Hemp is the future."
+              {
+                "p1": "Opposes vouchers that would allow students to choose their schools.",
+                "p2": "We should have higher taxes for the wealthy. ",
+                "p3": "Prioritizes green energy over foreign oil dependency.",
+                "p4": "Thinks Hemp is the future."
+              }
             ],
             "img": "imgs/senators/wyden_ron.jpg"
           },
@@ -1717,9 +1771,11 @@
             "party": "Republican",
             "bio": "Graduated Harvard university. Lives in Zionsville, Pennsylvania. Married to his wife Kris and they have three children.",
             "platform": [
-                "EPA should be a cooperative player and not an overbearing regulator of farmers.",
-                "Believes in increasing services and benefits for veterans.",
-                "Wants affordable higher education."
+              {
+                "p1": "EPA should be a cooperative player and not an overbearing regulator of farmers.",
+                "p2": "Believes in increasing services and benefits for veterans.",
+                "p3": "Wants affordable higher education."
+              }
             ],
             "img": "imgs/senators/toomey_pat.jpg"
           },
@@ -1796,9 +1852,11 @@
             "party": "Republican",
             "bio": "He’s a black republican. Born September 19, 1965 in North Charleston, South Carolina. Grew up poor.",
             "platform": [
-                "End the partisan IRS culture.",
-                "Law enforcement agencies need to report the use of lethal force and wear body cameras.",
-                "Wants to limit government spending and introduced a Balanced Budget Amendment."
+              {
+                "p1": "End the partisan IRS culture.",
+                "p2": "Law enforcement agencies need to report the use of lethal force and wear body cameras.",
+                "p3": "Wants to limit government spending and introduced a Balanced Budget Amendment."
+              }
             ],
             "img": "imgs/senators/scott_tim.jpg"
           }
@@ -1833,9 +1891,11 @@
             "party": "Republican",
             "bio": "Grew up in Murdo, South Dakota. Got his undergraduate degree at Biola University and Master’s from University of South Dakota. Goes hunting in his free time.",
             "platform": [
-                "Education reform to strengthen public education systems by reauthorizing federal K-12 education laws. ",
-                "Opposes EPA regulation that expands authority to regulate small wetlands, creeks, stock ponds and ditches under the Clean Water Act.",
-                "Strongly supports the Second Amendment."
+              {
+                "p1": "Education reform to strengthen public education systems by reauthorizing federal K-12 education laws. ",
+                "p2": "Opposes EPA regulation that expands authority to regulate small wetlands, creeks, stock ponds and ditches under the Clean Water Act.",
+                "p3": "Strongly supports the Second Amendment."
+              }
             ],
             "img": "imgs/senators/thune_john.jpg"
           }
@@ -1922,9 +1982,11 @@
             "party": "Republican",
             "bio": "",
             "platform": [
-                "",
-                "",
-                ""
+              {
+                "p1": "",
+                "p2": "",
+                "p3": ""
+              }
             ],
             "img": "imgs/senators/lee_mike.jpg"
           }
@@ -1959,9 +2021,11 @@
             "party": "Democratic",
             "bio": "",
             "platform": [
-                "",
-                "",
-                ""
+              {
+                "p1": "",
+                "p2": "",
+                "p3": ""
+              }
             ],
             "img": "imgs/senators/leahy_patrick.jpg"
           }
@@ -2022,9 +2086,11 @@
             "party": "Democratic",
             "bio": "",
             "platform": [
-                "",
-                "",
-                ""
+              {
+                "p1": "",
+                "p2": "",
+                "p3": ""
+              }
             ],
             "img": "imgs/senators/murray_patty.jpg"
           },
@@ -2089,9 +2155,11 @@
             "party": "Republican",
             "bio": "",
             "platform": [
-                "",
-                "",
-                ""
+              {
+                "p1": "",
+                "p2": "",
+                "p3": ""
+              }
             ],
             "img": "imgs/senators/johnson_ron.jpg"
           },

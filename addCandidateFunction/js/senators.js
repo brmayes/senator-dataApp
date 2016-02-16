@@ -1,6 +1,6 @@
-var app = angular.module('states', []);
+var app = angular.module('senators', []);
 
-app.controller('StatesController', ['$http', function($http) {
+app.controller('SenatorsController', ['$http', function($http) {
 
     //pulling json data using ajax
     this.stateSeats = [];
@@ -10,7 +10,7 @@ app.controller('StatesController', ['$http', function($http) {
     this.showCandidates = false;
 
 
-    $http.get('/data/senator_data.json')
+    $http.get('/data/senator_data_new.json')
         .success(function(data) {
             console.log(data);
             _this.stateSeats = data;
@@ -63,9 +63,6 @@ app.controller('StatesController', ['$http', function($http) {
               this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
 
               //check if array of candidates is empty
-              if (this.currentSenator.candidates[0] == null ) { console.log("null") }
-              else if (this.currentSenator.candidates[0] !== null) { console.log("not null") }
-
               if (this.currentSenator.candidates[0] == null ) {
 
                 this.showCandidates = false;
@@ -131,5 +128,6 @@ app.controller('StatesController', ['$http', function($http) {
       }
 
     }
+
 
 }]);
