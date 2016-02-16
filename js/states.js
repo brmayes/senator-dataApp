@@ -79,9 +79,6 @@ app.controller('StatesController', ['$http', function($http) {
               this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
 
               //check if array of candidates is empty
-              if (this.currentSenator.candidates[0] == null ) { console.log("null") }
-              else if (this.currentSenator.candidates[0] !== null) { console.log("not null") }
-
               if (this.currentSenator.candidates[0] == null ) {
 
                 this.showCandidates = false;
