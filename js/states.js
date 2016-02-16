@@ -39,27 +39,43 @@ app.controller('StatesController', ['$http', function($http) {
               //assign current input to senator
               this.currentSenator = this.stateSeats[j].senator_seats[k];
 
+              //Creating variables
               this.currentSenatorData = "";
               this.currentSeatContested = "";
               this.currentSeatParty = "";
               this.currentCandidatesData = "";
               this.candidateInfo = "";
+              this.currentSenatorImg = "";
 
+              //Checking for an image in the json data
+              if ("img" in this.currentSenator) {
+                this.currentSenatorImg += '<img src="' + this.currentSenator.img + '" class="currentSenatorImg">';
+              } else {
+                //Creating image string
+                this.currentSenatorImg += '<img src="imgs/senators/';
+                this.currentSenatorImg += (this.currentSenator.incumbent_last + '_' + this.currentSenator.incumbent_first).toLowerCase();
+                this.currentSenatorImg += '.jpg" class="currentSenatorImg">';
+              }
+
+
+              //Checking for contested
               if (this.currentSenator.contested == true) {
                 this.currentSeatContested = "contested"
               } else if (this.currentSenator.contested == false) {
                 this.currentSeatContested = "not contested"
               }
 
+              //Checking for party
               if (this.currentSenator.cur_party == "Republican") {
                 this.currentSeatParty = "R"
               } else if (this.currentSenator.cur_party == "Democratic") {
                 this.currentSeatParty = "D"
               }
 
-              //print stuff here
+              //print senator stuff here
+              this.currentSenatorData += this.currentSenatorImg;
               this.currentSenatorData += '<h4>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h4>';
-              this.currentSenatorData += '<div class="row"><div class="col-md-7"><p>No. of Years in Office: ' + this.currentSenator.years_in_off + '</div><div class="col-md-5"><p>Term End: ' + this.currentSenator.term_end + '</div></div>';
+              this.currentSenatorData += '<p>No. of Years in Office: ' + this.currentSenator.years_in_off + '</p><p>Term End: ' + this.currentSenator.term_end + '</p>';
               this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
 
               //check if array of candidates is empty

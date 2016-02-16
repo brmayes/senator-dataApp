@@ -74,3 +74,11 @@ h1 {
     padding: 50px;
     display: none;
 }
+
+/* Side Bar */
+.currentSenatorImg {
+  float: right;
+  height: 120px;
+  width: auto;
+  padding: 0 0 5px 5px;
+}

@@ -35,25 +35,25 @@
         </p>
       </div>
 
-      <div class="row">
-        <div class="col-md-8 col-sm-12 col-xs-12">
-          <div id="state-boxes">
-            <div ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
-              <div class="states" ng-repeat="seats in state.senator_seats" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)">
-                <p>
-                  {{state.state_abbr}}
-                </p>
+      <div id="body">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+            <div id="state-boxes">
+              <div ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
+                <div class="states" ng-repeat="seats in state.senator_seats" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)">
+                  <p>
+                    {{state.state_abbr}}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-          <!-- <div id="seatButtonsDiv" class="row"></div> -->
-
-          <div id="selectedIncumDiv"></div>
-          <div id="showCandidates" ng-show="statesCtrl.showCandidates">
-            <h5>Candidates: </h5>
-            <div id="selectedCandidDiv"></div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div id="selectedIncumDiv"></div>
+            <div id="showCandidates" ng-show="statesCtrl.showCandidates">
+              <h5>Candidates: </h5>
+              <div id="selectedCandidDiv"></div>
+            </div>
           </div>
         </div>
       </div>
