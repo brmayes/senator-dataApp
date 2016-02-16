@@ -9,7 +9,6 @@ app.controller('StatesController', ['$http', function($http) {
     this.currentSenator;
     this.showCandidates = false;
 
-
     $http.get('/data/senator_data.json')
         .success(function(data) {
             console.log(data);
@@ -77,6 +76,7 @@ app.controller('StatesController', ['$http', function($http) {
               //print senator stuff here
               this.currentSenatorData += this.currentSenatorImg;
               this.currentSenatorData += '<h4>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h4>';
+              this.currentSenatorData += '<p class="senatorState">' + nameOfState + '</p>'
               this.currentSenatorData += '<p>No. of Years in Office: ' + this.currentSenator.years_in_off + '</p><p>Term End: ' + this.currentSenator.term_end + '</p>';
               this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
 

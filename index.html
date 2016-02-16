@@ -14,7 +14,6 @@
     <script src="js/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/states.js"></script>
-    <script src="/path/to/isotope.pkgd.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,16 +30,30 @@
       <div id="header">
         <h1>2016 Senate Race</h1>
         <p id="instructions">
-          Instructions on how to use application.
-          <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
+          Instructions on how to use application. You can only search by candidate and not by state.
         </p>
+        <div class="row">
+          <div class="col-md-3">
+            <button ng-click="searchTerm = {$: true}">See contested/Not contested</button> <!-- Works to show only contested -->
+            <!-- <button ng-click="myFilter = {statesCtrl.stateSeats: }">See contested/Not contested</button> -->
+          </div>
+          <div class="col-md-3">
+            <button ng-click="base.filter('party')">See democrats/republicans</button>
+          </div>
+          <div class="col-md-3">
+            <button ng-click="base.filter('all')">Show All</button>
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
+          </div>
+        </div>
       </div>
 
       <div id="body">
         <div class="row">
           <div class="col-md-8 col-sm-12 col-xs-12">
             <div id="state-boxes">
-              <div ng-repeat="state in statesCtrl.stateSeats | filter:searchTerm"  ng-class="stateStyle($index)">
+              <div ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
                 <div class="states" ng-repeat="seats in state.senator_seats | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)">
                   <p>
                     {{state.state_abbr}}
