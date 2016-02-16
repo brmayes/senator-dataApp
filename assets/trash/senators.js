@@ -55,7 +55,7 @@ app.controller('SenatorsController', ['$http', function($http) {
                 this.currentSeatParty = "R"
               } else if (this.currentSenator.cur_party == "Democratic") {
                 this.currentSeatParty = "D"
-              }
+              } 
 
               //print stuff here
               this.currentSenatorData += '<h4>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h4>';

@@ -70,6 +70,8 @@ app.controller('StatesController', ['$http', function($http) {
                 this.currentSeatParty = "R"
               } else if (this.currentSenator.cur_party == "Democratic") {
                 this.currentSeatParty = "D"
+              } else {
+                this.currentSeatParty = "I"
               }
 
               //print senator stuff here
