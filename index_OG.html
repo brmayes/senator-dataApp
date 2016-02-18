@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Starter Temp</title>
 
-    <!-- Styles -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,700|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
     <script src="js/angular.js"></script>
     <script src="js/app.js"></script>
     <script src="js/states.js"></script>
-    <script src="js/filter.js"></script>
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,12 +32,20 @@
         <p id="instructions">
           Instructions on how to use application. You can only search by candidate and not by state.
         </p>
-        <div class="checkboxFilter">
-          <input type="checkbox" value="1" ng-model="contested" /> Contested
-          <input type="checkbox" value="2" ng-model="notContested" /> Not Contested
-          <input type="checkbox" value="3" ng-model="democratic" /> Democratic
-          <input type="checkbox" value="4" ng-model="republican" /> Republican
-          <input type="checkbox" value="5" ng-model="independent" /> Independent
+        <div class="row">
+          <div class="col-md-3">
+            <!-- <button ng-click="searchTerm = {$: true}">See contested/Not contested</button> --> <!-- Works to show only contested --> 
+            <!-- <button ng-click="myFilter = {statesCtrl.stateSeats: }">See contested/Not contested</button> -->
+          </div>
+          <div class="col-md-3">
+            <!-- <button ng-click="base.filter('party')">See democrats/republicans</button> -->
+          </div>
+          <div class="col-md-3">
+            <!-- <button ng-click="base.filter('all')">Show All</button> -->
+          </div>
+          <div class="col-md-3">
+            <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
+          </div>
         </div>
       </div>
 
@@ -49,8 +54,8 @@
           <div class="col-md-8 col-sm-12 col-xs-12">
             <div id="state-boxes">
               <div ng-repeat="state in statesCtrl.stateSeats"  ng-class="stateStyle($index)">
-                <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:notContested:democratic:republican:independent" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
-                  <p class="stateBoxInitials">
+                <div class="states" ng-repeat="seats in state.senator_seats | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)">
+                  <p>
                     {{state.state_abbr}}
                   </p>
                 </div>
@@ -60,7 +65,7 @@
           <div class="col-md-4 col-sm-12 col-xs-12">
             <div id="selectedIncumDiv"></div>
             <div id="showCandidates" ng-show="statesCtrl.showCandidates">
-              <h4>Candidates: </h4>
+              <h5>Candidates: </h5>
               <div id="selectedCandidDiv"></div>
             </div>
           </div>

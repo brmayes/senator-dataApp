@@ -73,12 +73,28 @@ app.controller('StatesController', ['$http', function($http) {
                 this.currentSeatParty = "I"
               }
 
+              //check for reelection
+              this.reElection = "";
+              if (this.currentSenator.candidates[0] == null) {
+
+              } else if (this.currentSenator.candidates[0].name == (this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last)) {
+                this.reElection = "ARE";
+              } else if (this.currentSenator.candidates[0].name !== (this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last)) {
+                this.reElection = "ARE NOT";
+              }
+
               //print senator stuff here
               this.currentSenatorData += this.currentSenatorImg;
-              this.currentSenatorData += '<h4>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h4>';
+              this.currentSenatorData += '<h3>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + ', ' + this.currentSeatParty + '</h3>';
               this.currentSenatorData += '<p class="senatorState">' + nameOfState + '</p>'
               this.currentSenatorData += '<p>No. of Years in Office: ' + this.currentSenator.years_in_off + '</p><p>Term End: ' + this.currentSenator.term_end + '</p>';
-              this.currentSenatorData += '<p>' + this.currentSenator.incumbent_first + ' ' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested + '.</p>';
+              this.currentSenatorData += '<p>' + this.currentSenator.incumbent_last + '\'s seat is ' + this.currentSeatContested;
+
+              if (this.currentSenator.contested == true) {
+                this.currentSenatorData+= ', and they <span class="reelect">' + this.reElection + '</span> running for re-election.</p>';
+              } else if (this.currentSenator.contested == false) {
+                this.currentSenatorData += '.';
+              }
 
               //check if array of candidates is empty
               if (this.currentSenator.candidates[0] == null ) {
@@ -99,10 +115,9 @@ app.controller('StatesController', ['$http', function($http) {
                   this.currentCandidate = this.candidatesList[k];
 
                   this.currentCandidatesData += '<div class="panel panel-default">';
-                  this.currentCandidatesData += '<div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.currentCandidate.name + '</a></h4></div>';
+                  this.currentCandidatesData += '<div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.currentCandidate.name + '</a></h5></div>';
                   this.currentCandidatesData += '<div id="collapse' + k + '" class="panel-collapse collapse">';
                   this.currentCandidatesData += '<div class="panel-body">';
-
 
                   //check to see if the candidate has additional information
                   if ("img" in this.currentCandidate) {

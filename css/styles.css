@@ -3,11 +3,17 @@
 Color scheme:
 Black: #262626
 White: #F7F7F7
-Red: #578B87
+Red: #F58B87
 Blue: #93C9E8
-Green: #C6CED1
-Grey: #B6DBBE
+Green: #B6DBBE
+Grey: #C6CED1
 */
+
+body {
+  background-color: #f7f7f7;
+  color: #262626;
+  font-family: 'Fira Sans', sans-serif;
+}
 
 .container {
   margin-top: 25px;
@@ -15,6 +21,9 @@ Grey: #B6DBBE
 
 h1 {
   text-align: center;
+  color: #262626;
+  font-family: 'Domine', serif;
+  font-weight: 700;
 }
 
 #header {
@@ -44,10 +53,15 @@ h1 {
 /**************************** State Graphic ****************************/
 .states {
   width: 9.5%;
-  border: 1px solid #262626;
   float: left;
   margin: 1px;
   height: 55px;
+  opacity: 0.75;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.states:hover {
+  opacity: 1;
 }
 
 .stateh3 {
@@ -81,4 +95,16 @@ h1 {
   height: 120px;
   width: auto;
   padding: 0 0 5px 5px;
+}
+
+.stateBoxInitials {
+  text-align: center;
+  padding-top: 25%;
+  opacity: 1 !important;
+  font-size: 18px;
+  color: black;
+}
+
+.reelect {
+  font-weight: 500;
 }
