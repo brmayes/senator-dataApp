@@ -17,6 +17,7 @@
     <script src="js/app.js"></script>
     <script src="js/states.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/ui-bootstrap-tpls.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,41 +37,35 @@
         </p>
         <div class="refineResults">
           <h4>Refine Results:</h4>
-          <p class="inline">
-            Search for
-          </p>
-          <select id="contestedSelect" class="inline" ng-model="contested">
-            <option value="contestedOrNot" disabled selected>Contested/Uncontested</option>
-            <option value="true">Contested</option>
-            <option value="false">Uncontested</option>
-          </select>
-          <p class="inline">
-            candidates in the
-          </p>
-          <div class="checkboxFilter inline">
-            <input type="checkbox" value="1" ng-model="democratic" /> Democratic
-            <input type="checkbox" value="2" ng-model="republican" /> Republican
-            <input type="checkbox" value="3" ng-model="independent" /> Independent
-          </div>
-          <p class="inline">
-            party/parties.
-          </p>
-        </div>
-        <div class="contestedSearch">
-          <p class="inline">
-            Search by contested or uncontested.
-          </p>
-          <button>CONTESTED</button>
-          <button>UNCONTESTED</button>
-        </div>
-        <div class="partySearch">
-          <p class="inline">
-            Search by party.
-          </p>
-          <div class="checkboxFilter inline">
-            <input type="radio" value="1" name="party" ng-model="democratic" /> Democratic
-            <input type="radio" value="2" name="party" ng-model="republican" /> Republican
-            <input type="radio" value="3" name="party" ng-model="independent" /> Independent
+          <div class="row">
+            <div class="col-md-8">
+              <p class="inline">
+                Search for
+              </p>
+              <select id="contestedSelect" class="inline" ng-model="contested">
+                <option value="contestedOrNot" disabled selected>Contested/Uncontested</option>
+                <option value="true">Contested</option>
+                <option value="false">Uncontested</option>
+              </select>
+              <p class="inline">
+                candidates in the
+              </p>
+              <div class="checkboxFilter inline">
+                <input type="checkbox" value="1" ng-model="democratic" /> Democratic
+                <input type="checkbox" value="2" ng-model="republican" /> Republican
+                <input type="checkbox" value="3" ng-model="independent" /> Independent
+              </div>
+              <p class="inline">
+                party/parties.
+              </p>
+              <p class="clearResults">
+                <!-- <button ng-model="reset">Clear</button> -->
+                <button type="button" value="true" ng-model="reset">Reset</button
+              </p>
+            </div>
+            <div class="col-md-4">
+              <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
+            </div>
           </div>
         </div>
       </div>
@@ -81,10 +76,7 @@
           <div class="col-md-8 col-sm-12 col-xs-12">
             <div id="state-boxes" class="container-fluid state-boxes">
               <div ng-repeat="state in statesCtrl.stateSeats" ng-class="stateStyle($index)">
-                <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
-                  <!-- <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:notContested:democratic:republican:independent" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)"> -->
-
-
+                <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
                   <p class="stateBoxInitials">
                     {{state.state_abbr}}
                   </p>
@@ -92,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-10 col-xs-10 col-sm-offset-1">
+          <div class="col-md-4 col-sm-12 col-xs-12 additionalCandidateInfo">
             <div id="selectedIncumDiv"></div>
             <div id="showCandidates" ng-show="statesCtrl.showCandidates">
               <h4>Candidates: </h4>
@@ -100,6 +92,10 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="footer">
+
       </div>
     </div>
 

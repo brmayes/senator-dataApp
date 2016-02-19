@@ -46,6 +46,7 @@ app.controller('StatesController', ['$http', function($http, $scope) {
               this.currentCandidatesData = "";
               this.candidateInfo = "";
               this.currentSenatorImg = "";
+              this.mobileCurrentSenator = "";
 
               //Checking for an image in the json data
               if ("img" in this.currentSenator) {
@@ -96,6 +97,8 @@ app.controller('StatesController', ['$http', function($http, $scope) {
               } else if (this.currentSenator.contested == false) {
                 this.currentSenatorData += '.';
               }
+
+              this.mobileCurrentSenator += ""
 
               //check if array of candidates is empty
               if (this.currentSenator.candidates[0] == null ) {
@@ -152,6 +155,9 @@ app.controller('StatesController', ['$http', function($http, $scope) {
               //appending variables to div in html
               document.getElementById("selectedIncumDiv").innerHTML = this.currentSenatorData;
               document.getElementById("selectedCandidDiv").innerHTML = ('<div class="panel-group" id="accordion">') + this.currentCandidatesData + ('</div>');
+
+              // document.getElementById("selectedIncumDiv-mobile").innerHTML = ('<div class="modal fade" id="myModal" role="dialog"><div class="modal-dialog"> <div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body">') +  this.currentSenatorData + ('</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>');
+
 
             }
 

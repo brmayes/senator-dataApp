@@ -56,8 +56,8 @@ h1 {
 
 /**************************** Header ****************************/
 
-.contestedSearch {
-
+.clearResults:hover {
+  font-weight: 700;
 }
 
 
@@ -117,8 +117,17 @@ h1 {
 
 
 /**************************** Media Queries ****************************/
-/*TABLET*/
+/*both*/
+@media (max-width:900px) {
+  .additionalCandidateInfo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10%;
+  }
+}
 
+/*TABLET*/
 @media (max-width:900px) and (min-width:376px) {
 
   .state-boxes {
@@ -143,3 +152,8 @@ h1 {
   }
 
 }
+
+
+
+
+/*CREDITS SLIDE*/
