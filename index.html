@@ -76,28 +76,17 @@
 
 
     <div id="body">
-      <div ng-controller="ModalController as modal" class="visible-xs mobileGrid">
+      <div class="visible-xs">
         <div ng-repeat="state in statesCtrl.stateSeats">
           <div class="seatsMobile" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
             <button class="mobileButtons" ng-click="open()">{{ state.state_abbr }}</button>
             <br />
 
-            <!--MODAL WINDOW-->
-            <script type="text/ng-template" id="myModalContent.html">
-              <div class="modal-header">
-                <h3>The Customer Name is: {{ state.state_abbr }}</h3>
-              </div>
-              <div class="modal-body">
-                This is where the Customer Details Goes
-                <br /> {{ state.state }}
-              </div>
-              <div class="modal-footer">
-
-              </div>
-            </script>
 
           </div>
         </div>
+      </div>
+
 
 
         <div class="row hidden-xs">

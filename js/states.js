@@ -11,7 +11,7 @@ app.controller('StatesController', ['$http', function($http, $scope) {
 
     $http.get('/data/senator_data.json')
         .success(function(data) {
-            // console.log(data);
+            console.log(data);
             _this.stateSeats = data;
 
         })

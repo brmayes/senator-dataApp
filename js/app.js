@@ -23,17 +23,11 @@ app.controller('BaseController', function() {
 
   }
 
-  this.slider = false;
-
-
-
 
 });
 
 app.filter('stateFilter', function() {
   return function(input, contested, democratic, republican, independent, reset) {
-
-    console.log(reset);
 
     var results = [];
 
