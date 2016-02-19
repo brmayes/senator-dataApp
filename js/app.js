@@ -1,6 +1,6 @@
 var app = angular.module('myApp', ['states', 'modal', 'ui.bootstrap']);
 
-app.controller('BaseController', function() {
+app.controller('BaseController', function($scope) {
 
   this.message = "Ready";
 
@@ -23,12 +23,11 @@ app.controller('BaseController', function() {
 
   }
 
-  this.resetFilter = function() {
+  $scope.resetFilter = function() {
 
-    document.getElementById("democraticBox").checked = false;
-    document.getElementById("republicanBox").checked = false;
-    document.getElementById("independentBox").checked = false;
-    document.getElementById("contestedSelect").selectedIndex = 0;
+    $scope.partyCheck.democratic = false;
+    $scope.partyCheck.republican = false;
+    $scope.partyCheck.independent = false;
 
   }
 
@@ -77,7 +76,7 @@ app.filter('stateFilter', function() {
           } else if (independent === true && input[i].cur_party == 'Independent') {
             match = true;
           }
-      } 
+      }
 
       if (match) results.push(input[i]); //push matches to variable
 
