@@ -50,6 +50,17 @@ h1 {
   background-color: #B6DBBE;
 }
 
+.inline {
+  display: inline-block;
+}
+
+/**************************** Header ****************************/
+
+.contestedSearch {
+
+}
+
+
 /**************************** State Graphic ****************************/
 .states {
   width: 9.5%;
@@ -59,6 +70,7 @@ h1 {
   opacity: 0.75;
   transition: opacity 0.4s ease-in-out;
 }
+
 
 .states:hover {
   opacity: 1;
@@ -76,12 +88,6 @@ h1 {
   border: solid 1px black;
   margin-left: 2px;
   width: 48% !important;
-}
-
-@media (max-width: 400px) {
-  .senatorBox {
-    width: 48% !important;
-  }
 }
 
 #panel {
@@ -107,4 +113,33 @@ h1 {
 
 .reelect {
   font-weight: 500;
+}
+
+
+/**************************** Media Queries ****************************/
+/*TABLET*/
+
+@media (max-width:900px) and (min-width:376px) {
+
+  .state-boxes {
+    margin-left: 2%;
+  }
+
+}
+
+/*MOBILE*/
+
+@media (max-width: 375px) {
+  .states {
+    width: 18.5%;
+  }
+
+  .state-boxes {
+    margin-left: 3%;
+  }
+
+  .senatorBox {
+    width: 45% !important;
+  }
+
 }
