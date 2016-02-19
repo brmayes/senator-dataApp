@@ -91,16 +91,16 @@
                 candidates in the
               </p>
               <div class="checkboxFilter inline">
-                <input type="checkbox" value="1" ng-model="democratic" /> Democratic
-                <input type="checkbox" value="2" ng-model="republican" /> Republican
-                <input type="checkbox" value="3" ng-model="independent" /> Independent
+                <input type="checkbox" value="1" ng-model="democratic" id="democraticBox" /> Democratic
+                <input type="checkbox" value="2" ng-model="republican" id="republicanBox" /> Republican
+                <input type="checkbox" value="3" ng-model="independent" id="independentBox" /> Independent
               </div>
               <p class="inline">
                 party/parties.
               </p>
               <p class="clearResults">
                 <!-- <button ng-model="reset">Clear</button> -->
-                <!-- <button type="button" value="true" ng-model="reset">Reset</button </p> -->
+                <button type="button" ng-click="base.resetFilter()">Reset</button </p>
             </div>
             <div class="col-md-4">
               <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
@@ -116,7 +116,7 @@
         <div class="col-md-8 col-sm-12 col-xs-12">
           <div id="state-boxes" class="container-fluid state-boxes">
             <div ng-repeat="state in statesCtrl.stateSeats" ng-class="stateStyle($index)">
-              <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
+              <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
                 <p class="stateBoxInitials">
                   {{state.state_abbr}}
                 </p>

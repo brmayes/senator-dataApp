@@ -23,11 +23,20 @@ app.controller('BaseController', function() {
 
   }
 
+  this.resetFilter = function() {
+
+    document.getElementById("democraticBox").checked = false;
+    document.getElementById("republicanBox").checked = false;
+    document.getElementById("independentBox").checked = false;
+    document.getElementById("contestedSelect").selectedIndex = 0;
+
+  }
+
 
 });
 
 app.filter('stateFilter', function() {
-  return function(input, contested, democratic, republican, independent, reset) {
+  return function(input, contested, democratic, republican, independent) {
 
     var results = [];
 
@@ -68,14 +77,7 @@ app.filter('stateFilter', function() {
           } else if (independent === true && input[i].cur_party == 'Independent') {
             match = true;
           }
-      } else if (reset == true) { //trying to reset the filter here
-        contested = undefined;
-        republican = undefined;
-        democratic = undefined;
-        independent = undefined;
-        results = input;
-        match = false;
-      }
+      } 
 
       if (match) results.push(input[i]); //push matches to variable
 
