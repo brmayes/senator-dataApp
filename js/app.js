@@ -23,13 +23,13 @@ app.controller('BaseController', function($scope) {
 
   }
 
-  $scope.resetFilter = function() {
-
-    $scope.partyCheck.democratic = false;
-    $scope.partyCheck.republican = false;
-    $scope.partyCheck.independent = false;
-
-  }
+  // $scope.resetFilter = function() {
+  //
+  //   $scope.partyCheck.democratic = false;
+  //   $scope.partyCheck.republican = false;
+  //   $scope.partyCheck.independent = false;
+  //
+  // }
 
 
 });
@@ -82,14 +82,33 @@ app.filter('stateFilter', function() {
 
     }
 
+    //checking for desktop or mobile
+      var w = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+      var h = window.innerHeight
+      || document.documentElement.clientHeight
+      || document.body.clientHeight;
+
+      if (w > 480) {
+        console.log("desktop")
+        if ((contested == undefined) && (republican == undefined || republican == false) && (democratic == undefined || democratic == false) && (independent == undefined || independent == false)) results = input;
+
+      } else if (w < 480) {
+        console.log("mobile")
+      }
+
+
     // catch all so the boxes show on load
-    if ((contested == undefined) && (republican == undefined || republican == false) && (democratic == undefined || democratic == false) && (independent == undefined || independent == false)) results = input;
+    // if ((contested == undefined) && (republican == undefined || republican == false) && (democratic == undefined || democratic == false) && (independent == undefined || independent == false)) results = input;
 
     return results; //returning the matches
 
   };
 })
 
+//Creating modal
 app.directive('modalDialog', function() {
   return {
     restrict: 'E',

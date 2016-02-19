@@ -58,11 +58,42 @@ h1 {
 /**************************** Header ****************************/
 
 .clearResults:hover {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .resultsh4 {
   margin-bottom: 0;
+}
+
+.contestedDropdown {
+  width: auto;
+}
+
+.searchFor {
+  width: auto;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .contestedDropdown {
+    width: 150px;
+  }
+
+  .searchFor {
+    width: 80%;
+    /*background-color: lightblue;*/
+  }
+}
+
+@media (max-width: 417px) {
+
+  .partiesSent {
+    margin-top: 5px;
+  }
+}
+
+.note {
+  margin-top: 0;
+  font-size: 10px;
 }
 
 /**************************** Footer ****************************/
@@ -76,11 +107,6 @@ h1 {
   text-align: center;
   transition: all 0.4;
 }
-/*
-.sources:hover {
-  font-weight: 700;
-  transform:  translateY(3px);
-}*/
 
 .container-sources {
   margin-top: 0;
@@ -236,7 +262,7 @@ h1 {
   box-shadow: 4px 4px 80px #000;
 }
 .ng-modal-dialog-content {
-  padding:10px;
+  padding:30px;
   text-align: left;
 }
 .ng-modal-close {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap Starter Temp</title>
+  <title>Race to the Senate 2016</title>
 
   <!-- Styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,36 +29,38 @@
 </head>
 
 <body ng-controller="BaseController as base">
-  <!-- Sources -->
+  <!-- Sources Modal -->
   <div class="container container-sources gray">
     <div ng-controller='MyCtrl' class="sources">
       <span ng-click='toggleModal()'>Sources</span>
       <modal-dialog show='modalShown' width='400px' height='60%'>
-        <p>Sources:
-          <p>
-            <ul>
-              <li>
-                General
-              </li>
-              <ul>
-                <li><a href="https://senate.gov" target="_blank">United States Senate</a></li>
-                <li><a href="http://cookpolitical.com/senate/charts/race-ratings" target="_blank">Cook Political</a></li>
-                <li><a href="https://ballotpedia.org/Main_Page" target="_blank">Ballotpedia</a></li>
-              </ul>
-              <li>
-                Information for seats without incumbents running for re-election:
-              </li>
-              <ul>
-                <li><a href="www.kamalaharris.org/" target="_blank">KamalaHarris.org</a></li>
-                <li><a href="www.johnestrada.org/" target="_blank">JohnEstrada.org</a></li>
-                <li><a href="www.murphyforflorida.com/" target="_blank">MurphyforFlorida.com</a></li>
-                <li><a href="www.holcombforindiana.org/" target="_blank">HolcombforIndiana.org</a></li>
-                <li><a href="www.flemingforla.org/" target="_blank">FlemingforLa.com</a></li>
-                <li><a href="www.vanhollen.org/" target="_blank">VanHollen.org</a></li>
-                <li><a href="www.catherinecortezmasto.org/" target="_blank">CatherineCortezMasto.com</a></li>
-              </ul>
-            </ul>
+        <p>Sources:</p>
+          <ul>
+            <li>
+              General
             </li>
+            <ul>
+              <li><a href="https://senate.gov" target="_blank">United States Senate</a></li>
+              <li><a href="http://cookpolitical.com/senate/charts/race-ratings" target="_blank">Cook Political</a></li>
+              <li><a href="https://ballotpedia.org/Main_Page" target="_blank">Ballotpedia</a></li>
+            </ul>
+            <li>
+              Information for seats without incumbents running for re-election:
+            </li>
+            <ul>
+              <li><a href="www.kamalaharris.org/" target="_blank">KamalaHarris.org</a></li>
+              <li><a href="www.johnestrada.org/" target="_blank">JohnEstrada.org</a></li>
+              <li><a href="www.murphyforflorida.com/" target="_blank">MurphyforFlorida.com</a></li>
+              <li><a href="www.holcombforindiana.org/" target="_blank">HolcombforIndiana.org</a></li>
+              <li><a href="www.flemingforla.org/" target="_blank">FlemingforLa.com</a></li>
+              <li><a href="www.vanhollen.org/" target="_blank">VanHollen.org</a></li>
+              <li><a href="www.catherinecortezmasto.org/" target="_blank">CatherineCortezMasto.com</a></li>
+            </ul>
+          </ul>
+          <br/><br/>
+        <p>
+          Application by Brittany Mayes. Last updated: 2/19/16.
+        </p>
       </modal-dialog>
     </div>
   </div>
@@ -68,44 +70,64 @@
   <div class="container" ng-controller="StatesController as statesCtrl">
 
     <div id="header">
-      <h1>2016 Senate Race</h1>
-      <p id="instructions">
-        Instructions on how to use application. You can only search by candidate and not by state.
-      </p>
+      <h1>Race to the Senate 2016</h1>
+      <div id="instructions">
+        <span class="hidden-xs">
+          <p>
+            Welcome to the 2016 Race to the Senate! Use this tool to find out more information
+            about the status of each Senate seat, including additional information about the incuments and the candidates
+            if the selected seat is contested.
+          </p>
+          <p>
+            Instructions: Use the "Refine Results" options and/or the search bar to learn about
+            the seats in the 2016 Senate Race.
+          </p>
+          <p class="note">
+            *Search is limited to incumbent and candidate information, rather than by state.
+          </p>
+        </span>
+        <span class="visible-xs">
+          <p>
+            Instructions: To get started, use the "Refine Results" options to specify seats in the 2016
+            Senate Race that you're interested in. From there, you can use the search bar to further narrow down your search results.
+          </p>
+          <p class="note">
+            *Search is limited to incumbent and candidate information, rather than by state.
+          </p>
+        </span>
+      </div>
       <div class="refineResults">
         <div class="refine">
           <h4 class="resultsh4">Refine Results</h4>
           <p class="resultsReset">
-            Reset Results
+            <p onClick="window.location.reload()" class="clearResults">Start Over</p>
           </p>
           <div class="row">
             <div class="col-md-8">
-              <p class="inline">
-                Search for
-              </p>
-              <select id="contestedSelect" class="inline" ng-model="contested">
-                <option value="contestedOrNot" disabled selected>Contested/Uncontested</option>
-                <option value="true">Contested</option>
-                <option value="false">Uncontested</option>
-              </select>
-              <p class="inline">
-                candidates in the
-              </p>
-              <div class="checkboxFilter inline">
-                <input type="checkbox" value="true" ng-model="partyCheck.democratic"  /> Democratic
-                <input type="checkbox" value="true" ng-model="partyCheck.republican"  /> Republican
-                <input type="checkbox" value="true" ng-model="partyCheck.independent"  /> Independent
+              <div class="inline searchFor">
+                <p class="inline">
+                  Search for
+                </p>
+                <select id="contestedSelect" class="inline btn btn-default dropdown-toggle contestedDropdown" ng-model="contested">
+                  <option value="true">Contested</option>
+                  <option value="false">Uncontested</option>
+                </select>
+                <p class="inline">
+                  candidates in the
+                </p>
               </div>
-              <p class="inline">
-                party/parties.
-              </p>
-              <p class="clearResults">
-                <!-- <button ng-model="reset">Clear</button> -->
-                <!-- <button type="button" ng-click="resetFilter()">Reset</button </p> -->
-                <input type="button" ng-click="resetFilter()" value="Reset" />
-
+              <div class="inline">
+                <div class="checkboxFilter inline">
+                  <input type="checkbox" value="true" ng-model="partyCheck.democratic"  /> Democratic
+                  <input type="checkbox" value="true" ng-model="partyCheck.republican"  /> Republican
+                  <input type="checkbox" value="true" ng-model="partyCheck.independent"  /> Independent
+                </div>
+                <p class="inline partiesSent">
+                  party/parties.
+                </p>
+              </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
             </div>
           </div>
