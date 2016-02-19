@@ -29,6 +29,42 @@
 </head>
 
 <body ng-controller="BaseController as base">
+  <!-- Sources -->
+  <div class="container container-sources gray">
+    <div ng-controller='MyCtrl' class="sources">
+      <span ng-click='toggleModal()'>Sources</span>
+      <modal-dialog show='modalShown' width='400px' height='60%'>
+        <p>Sources:
+          <p>
+            <ul>
+              <li>
+                General
+              </li>
+              <ul>
+                <li><a href="https://senate.gov" target="_blank">United States Senate</a></li>
+                <li><a href="http://cookpolitical.com/senate/charts/race-ratings" target="_blank">Cook Political</a></li>
+                <li><a href="https://ballotpedia.org/Main_Page" target="_blank">Ballotpedia</a></li>
+              </ul>
+              <li>
+                Information for seats without incumbents running for re-election:
+              </li>
+              <ul>
+                <li><a href="www.kamalaharris.org/" target="_blank">KamalaHarris.org</a></li>
+                <li><a href="www.johnestrada.org/" target="_blank">JohnEstrada.org</a></li>
+                <li><a href="www.murphyforflorida.com/" target="_blank">MurphyforFlorida.com</a></li>
+                <li><a href="www.holcombforindiana.org/" target="_blank">HolcombforIndiana.org</a></li>
+                <li><a href="www.flemingforla.org/" target="_blank">FlemingforLa.com</a></li>
+                <li><a href="www.vanhollen.org/" target="_blank">VanHollen.org</a></li>
+                <li><a href="www.catherinecortezmasto.org/" target="_blank">CatherineCortezMasto.com</a></li>
+              </ul>
+            </ul>
+            </li>
+      </modal-dialog>
+    </div>
+  </div>
+
+
+
   <div class="container" ng-controller="StatesController as statesCtrl">
     <div id="header">
       <h1>2016 Senate Race</h1>
@@ -36,8 +72,11 @@
         Instructions on how to use application. You can only search by candidate and not by state.
       </p>
       <div class="refineResults">
-        <div class="refine hidden-xs">
-          <h4>Refine Results:</h4>
+        <div class="refine">
+          <h4 class="resultsh4">Refine Results</h4>
+          <p class="resultsReset">
+            Reset Results
+          </p>
           <div class="row">
             <div class="col-md-8">
               <p class="inline">
@@ -61,60 +100,44 @@
               </p>
               <p class="clearResults">
                 <!-- <button ng-model="reset">Clear</button> -->
-                <button type="button" value="true" ng-model="reset">Reset</button </p>
+                <!-- <button type="button" value="true" ng-model="reset">Reset</button </p> -->
             </div>
             <div class="col-md-4">
               <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
             </div>
           </div>
         </div>
-        <div class="searchBar visible-xs">
-          <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" /> <br />
-        </div>
       </div>
     </div>
 
 
     <div id="body">
-      <div class="visible-xs">
-        <div ng-repeat="state in statesCtrl.stateSeats">
-          <div class="seatsMobile" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
-            <button class="mobileButtons" ng-click="open()">{{ state.state_abbr }}</button>
-            <br />
-
-
-          </div>
-        </div>
-      </div>
-
-
-
-        <div class="row hidden-xs">
-          <div class="col-md-8 col-sm-12 col-xs-12">
-            <div id="state-boxes" class="container-fluid state-boxes">
-              <div ng-repeat="state in statesCtrl.stateSeats" ng-class="stateStyle($index)">
-                <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
-                  <p class="stateBoxInitials">
-                    {{state.state_abbr}}
-                  </p>
-                </div>
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <div id="state-boxes" class="container-fluid state-boxes">
+            <div ng-repeat="state in statesCtrl.stateSeats" ng-class="stateStyle($index)">
+              <div class="states" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
+                <p class="stateBoxInitials">
+                  {{state.state_abbr}}
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 additionalCandidateInfo">
-            <div id="selectedIncumDiv"></div>
-            <div id="showCandidates" ng-show="statesCtrl.showCandidates">
-              <h4>Candidates: </h4>
-              <div id="selectedCandidDiv"></div>
-            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 additionalCandidateInfo">
+          <div id="selectedIncumDiv"></div>
+          <div id="showCandidates" ng-show="statesCtrl.showCandidates">
+            <h4>Candidates: </h4>
+            <div id="selectedCandidDiv"></div>
           </div>
         </div>
       </div>
-
-      <div class="footer">
-      </div>
     </div>
 
+    <div class="footer">
+
+    </div>
+  </div>
 
 
 
@@ -122,10 +145,11 @@
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
