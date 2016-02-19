@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['states', 'filter']);
+var app = angular.module('myApp', ['states', 'myFilter']);
 
 app.controller('BaseController', function() {
 
@@ -57,7 +57,7 @@ app.filter('stateFilter', function() {
 
     }
 
-    console.log(results);
+    console.log(results)
 
     if (contested === undefined && notContested === undefined && republican === undefined && democratic === undefined && independent === undefined) results = input;
 

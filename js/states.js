@@ -1,6 +1,6 @@
 var app = angular.module('states', []);
 
-app.controller('StatesController', ['$http', function($http) {
+app.controller('StatesController', ['$http', function($http, $scope) {
 
     //pulling json data using ajax
     this.stateSeats = [];
@@ -11,13 +11,14 @@ app.controller('StatesController', ['$http', function($http) {
 
     $http.get('/data/senator_data.json')
         .success(function(data) {
-            console.log(data);
+            // console.log(data);
             _this.stateSeats = data;
 
         })
         .error(function(msg) {
             console.log("This request failed.\n" + msg);
         });
+
 
     this.currentSeat = function(nameOfState, incumLast) {
 

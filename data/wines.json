@@ -1,0 +1,10 @@
+[
+  { "name": "Wine A", "category": "red" },
+  { "name": "Wine B", "category": "red" },
+  { "name": "wine C", "category": "white" },
+  { "name": "Wine D", "category": "red" },
+  { "name": "Wine E", "category": "red" },
+  { "name": "wine F", "category": "white" },
+  { "name": "wine G", "category": "champagne"},
+  { "name": "wine H", "category": "champagne" }
+]
