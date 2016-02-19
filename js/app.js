@@ -31,9 +31,11 @@ app.filter('stateFilter', function() {
 
     var results = [];
 
+    //search through each of the seats in the input
     for (var i in input) {
       var match = false;
 
+      //drop down option one: contested is true -- tests for possibility of all combinations
       if (contested == "true" && input[i].contested == true) {
         if ((republican === true && input[i].cur_party == 'Republican') && (democratic === true && input[i].cur_party === 'Democratic') && (independent === true && input[i].cur_party === 'Independent')) {
           match = true;
@@ -50,7 +52,7 @@ app.filter('stateFilter', function() {
         } else if (independent === true && input[i].cur_party == 'Independent') {
           match = true;
         }
-      } else if (contested == "false" && input[i].contested == false) {
+      } else if (contested == "false" && input[i].contested == false) { //drop down option two: contested is false -- tests for possibility of all combinations
           if ((republican === true && input[i].cur_party == 'Republican') && (democratic === true && input[i].cur_party === 'Democratic') && (independent === true && input[i].cur_party === 'Independent')) {
             match = true;
           } else if ((republican === true && input[i].cur_party == 'Republican') && (democratic === true && input[i].cur_party === 'Democratic')) {
@@ -66,7 +68,7 @@ app.filter('stateFilter', function() {
           } else if (independent === true && input[i].cur_party == 'Independent') {
             match = true;
           }
-      } else if (reset == true) {
+      } else if (reset == true) { //trying to reset the filter here
         contested = undefined;
         republican = undefined;
         democratic = undefined;
@@ -75,14 +77,14 @@ app.filter('stateFilter', function() {
         match = false;
       }
 
-      if (match) results.push(input[i]);
+      if (match) results.push(input[i]); //push matches to variable
 
     }
 
-    // reset = false;
+    // catch all so the boxes show on load
     if ((contested == undefined) && (republican == undefined || republican == false) && (democratic == undefined || democratic == false) && (independent == undefined || independent == false)) results = input;
 
-    return results;
+    return results; //returning the matches
 
   };
 })
