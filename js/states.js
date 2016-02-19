@@ -136,7 +136,7 @@ app.controller('StatesController', ['$http', function($http, $scope) {
 
                   if ("platform" in this.currentCandidate) {
                     var x;
-                    this.currentCandidatesData += '<li>Platform: </li><ul>'
+                    this.currentCandidatesData += '<li>Platform: </li><ul class="custom-bullet">'
 
                     for (x in this.currentCandidate.platform) {
                       this.currentCandidatesData += '<li>' + this.currentCandidate.platform[x] + '</li>';

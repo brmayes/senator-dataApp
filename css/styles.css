@@ -55,23 +55,28 @@ h1 {
   display: inline-block;
 }
 
-/*ul {
-    margin: 0.75em 0;
-    padding: 0 1em;
-    list-style: none;
+url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+
+.custom-bullet ul {
+  display: none;
 }
-li:before {
-    content: "";
-    border-color: transparent #111;
-    border-style: solid;
-    border-width: 0.35em 0 0.35em 0.45em;
+
+.custom-bullet li {
     display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 0.9em;
-    position: relative;
-}*/
+
+}
+
+.custom-bullet li:before
+{
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e067";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #CCCCCC;
+}
 
 .font-small {
   font-size: 10px;
