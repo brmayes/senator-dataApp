@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['states', 'myFilter']);
+var app = angular.module('myApp', ['states', 'modal', 'ui.bootstrap']);
 
 app.controller('BaseController', function() {
 

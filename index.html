@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Starter Temp</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Starter Temp</title>
 
-    <!-- Styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,700|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Domine:400,700|Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-    <!-- Scripts -->
-    <script src="js/angular.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/states.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/ui-bootstrap-tpls.js"></script>
+  <!-- Scripts -->
+  <script src="js/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/states.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/ui-bootstrap-tpls.js"></script>
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-  </head>
+</head>
 
-  <body ng-controller="BaseController as base">
-    <div class="container" ng-controller="StatesController as statesCtrl">
-      <div id="header">
-        <h1>2016 Senate Race</h1>
-        <p id="instructions">
-          Instructions on how to use application. You can only search by candidate and not by state.
-        </p>
-        <div class="refineResults">
+<body ng-controller="BaseController as base">
+  <div class="container" ng-controller="StatesController as statesCtrl">
+    <div id="header">
+      <h1>2016 Senate Race</h1>
+      <p id="instructions">
+        Instructions on how to use application. You can only search by candidate and not by state.
+      </p>
+      <div class="refineResults">
+        <div class="refine hidden-xs">
           <h4>Refine Results:</h4>
           <div class="row">
             <div class="col-md-8">
@@ -60,19 +61,46 @@
               </p>
               <p class="clearResults">
                 <!-- <button ng-model="reset">Clear</button> -->
-                <button type="button" value="true" ng-model="reset">Reset</button
-              </p>
+                <button type="button" value="true" ng-model="reset">Reset</button </p>
             </div>
             <div class="col-md-4">
               <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" />
             </div>
           </div>
         </div>
+        <div class="searchBar visible-xs">
+          <input type="text" ng-model="searchTerm" class="form-control" style="float: right" placeholder="Search" /> <br />
+        </div>
       </div>
+    </div>
 
 
-      <div id="body">
-        <div class="row">
+    <div id="body">
+      <div ng-controller="ModalController as modal" class="visible-xs mobileGrid">
+        <div ng-repeat="state in statesCtrl.stateSeats">
+          <div class="seatsMobile" ng-repeat="seats in state.senator_seats | stateFilter:contested:democratic:republican:independent:reset | filter:searchTerm" ng-click="statesCtrl.currentSeat(state.state, seats.incumbent_last)" ng-style="base.boxColor(seats.cur_party, seats.contested)">
+            <button class="mobileButtons" ng-click="open()">{{ state.state_abbr }}</button>
+            <br />
+
+            <!--MODAL WINDOW-->
+            <script type="text/ng-template" id="myModalContent.html">
+              <div class="modal-header">
+                <h3>The Customer Name is: {{ state.state_abbr }}</h3>
+              </div>
+              <div class="modal-body">
+                This is where the Customer Details Goes
+                <br /> {{ state.state }}
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </script>
+
+          </div>
+        </div>
+
+
+        <div class="row hidden-xs">
           <div class="col-md-8 col-sm-12 col-xs-12">
             <div id="state-boxes" class="container-fluid state-boxes">
               <div ng-repeat="state in statesCtrl.stateSeats" ng-class="stateStyle($index)">
@@ -95,7 +123,6 @@
       </div>
 
       <div class="footer">
-
       </div>
     </div>
 
@@ -110,6 +137,6 @@
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
 
 </html>
