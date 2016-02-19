@@ -119,7 +119,7 @@ app.controller('StatesController', ['$http', function($http, $scope) {
                   this.currentCandidate = this.candidatesList[k];
 
                   this.currentCandidatesData += '<div class="panel panel-default">';
-                  this.currentCandidatesData += '<div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.currentCandidate.name + '</a></h5></div>';
+                  this.currentCandidatesData += '<div class="panel-heading"><h5 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse' + k + '">' + this.currentCandidate.name + ' <span class="glyphicon glyphicon-chevron-down font-small" aria-hidden="true"></span></a></h5></div>';
                   this.currentCandidatesData += '<div id="collapse' + k + '" class="panel-collapse collapse">';
                   this.currentCandidatesData += '<div class="panel-body">';
 
